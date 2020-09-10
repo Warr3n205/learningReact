@@ -9,13 +9,13 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
-        <button className="btn btn-secondary btn-sm">Increment</button>
         <ul>
           {this.state.tags.map((tag) => (
             <li key={tag}>{tag}</li>
           ))}
         </ul>
+        <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+        <button className="btn btn-secondary btn-sm">Increment</button>
       </div>
     );
   }
